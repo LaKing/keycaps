@@ -55,7 +55,7 @@ F4='*type 1 (EV_KEY), code 37 (KEY_K), value 1*'
 ## for every keypress, we will execute a command
 sudo evtest --grab "$device" | while read line; do
     case $line in
-
+        ## key    Command to be executed
         ($A4)     echo "A4" && gnome-terminal;;
         ($A3)     echo "A3" && gnome-terminal -- mc;;
         ($A2)     echo "A2" && sudo gnome-terminal ;;

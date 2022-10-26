@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## for fedora or rpn distros
+## for fedora and redhat distros
 sudo dnf -y install evtest
 
 if [[ -f $PWD/keycap.sh ]]
